@@ -9,7 +9,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* navbar */
+
+/* header */
 .header{
     width: 100%;
     min-height: 100vh;
@@ -17,7 +18,7 @@ body{
     background-size: cover;
     background-position: center;
     filter: brightness(80%);
-    z-index: 1000;
+    
 }
 
 .logo{
@@ -26,14 +27,12 @@ body{
     cursor: pointer;
 }
 
-nav{
+#navbar{
     width: 100%;
     background-color: #2A3439;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
 }
 
 nav .fa-solid{
@@ -62,7 +61,7 @@ nav ul li a::after{
     width: 0;
     height: 4px;
     border-radius: 20px;
-    background: #ff004f;
+    background: #F5A627;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -94,7 +93,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-   color: #ff004f;
+   color: #F5A627;
 }
 
 .header-text h1{
@@ -111,19 +110,19 @@ nav ul li a:hover::after{
     margin-top: 50px;
     padding: 10px 20px;
     display: inline-block;
-    border: 2px solid #ff004f;
+    border: 2px solid #F5A627;
     border-radius: 8px;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    color: #ff004f;
+    color: #F5A627;
     
     transition: transform 0.3s ease-in 0s;
 }
 
 .resume-btn:hover{
-    background-color: #ff004f;
+    background-color: #F5A627;
     color: #f9f9f9;
     transform: translateY(-10px);
 }
@@ -147,7 +146,6 @@ nav ul li a:hover::after{
     background: #2A3439;
     padding: 60px 12%;
     height: 100vh;
-    z-index: 2;
 }
 
 .row{
@@ -201,7 +199,7 @@ nav ul li a:hover::after{
     height: 3px;
     left: 0;
     bottom: -8px;
-    background: #ff004f;
+    background: #F5A627;
     position: absolute;
     transition: 0.5s;
 }
@@ -217,7 +215,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b31949;
+    color: #F5A627;
     font-size: 16px;
     font-weight: 500;
 }
@@ -237,7 +235,7 @@ contact */
 .contact{
     color: #f9f9f9;
     background-color: #2A3439;
-    padding: 50px 12% 0;
+    padding: 70px 12% 0;
 }
 
 .contact-left{
@@ -257,7 +255,7 @@ contact */
 }
 
 .contact-left p i{
-    color: #ff004f;
+    color: #F5A627;
     margin-right: 15px;
     font-size: 24px;
 }
@@ -272,10 +270,12 @@ contact */
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
+
+    transition: 0.2s ease-in 0s;
 }
 
 .social a:hover{
-    color: #ff004f;
+    color: #F5A627;
     transform: translateY(-7px);
 }
 
@@ -298,10 +298,11 @@ form input, form textarea{
 form button{
     font-size: 16px;
     margin-top: 40px;
+    margin-bottom: 40px;
     padding: 15px 45px;
     border: none;
     border-radius: 6px;
-    background-color: #ff004f;
+    background-color: #F5A627;
     cursor: pointer;
     color: #fff;
     font-weight: 600;
@@ -310,8 +311,8 @@ form button{
 }
 
 form button:hover{
-    border: 2px solid #ff004f;
-    color: #ff004f;
+    border: 2px solid #F5A627;
+    color: #F5A627;
     background-color: transparent;
     transform: translateY(-25px);
 }
@@ -320,20 +321,24 @@ form button:hover{
     text-align: center;
     padding-top: 80px;
     padding-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
 }
 
 /* portfolio */
 .portfolio{
     color: #f9f9f9;
-    background-color: #AFBFBB;
-    padding: 50px 12%;
+    /* background-color: #AFBFBB; */
+    background-color: #2A3439;
+    padding: 200px 12% 50px;
 }
 
 .portfolio h1{
     font-size: 60px;
     text-align: center;
-    color: #262626;
+    /* color: #262626; */
 }
 
 .showcase-list{
@@ -364,7 +369,7 @@ form button:hover{
 
 .work a i{
     text-decoration: none;
-    color: #ff004f;
+    color: #F5A627;
     font-size: 20px;
     display: inline-block;
     margin-top: 20px;
@@ -385,9 +390,22 @@ form button:hover{
 }
 
 .work:hover{
-    border: 4px solid #ff004f;
+    border: 4px solid #F5A627;
     transition: 0.3s ease-in-out 0s;
     transform: translateY(-25px)
+}
+
+/* copyright */
+.copyright{
+    padding: 50px;
+    background-color: #F5A627;
+}
+
+.copyright p{
+    text-align: center;
+    font-size: 15px;
+    color: #262626;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 600px){
@@ -403,7 +421,7 @@ form button:hover{
     }
 
     nav ul{
-        background: #ff004f;
+        background: #F5A627;
         position: fixed;
         top: 0;
         right: -100%;
