@@ -13,12 +13,11 @@ body{
 /* header */
 .header{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url(images/backgroundimg.jpg);
     background-size: cover;
     background-position: center;
     filter: brightness(80%);
-    
 }
 
 .logo{
@@ -27,7 +26,7 @@ body{
     cursor: pointer;
 }
 
-#navbar{
+nav{
     width: 100%;
     background-color: #2A3439;
     display: flex;
@@ -410,82 +409,6 @@ form button:hover{
 
 @media only screen and (max-width: 600px){
     /* home */
-    nav .fa-bars{
-        display: block;
-        font-size: 38px;
-    }
-
-    nav .fa-xmark{
-        display: block;
-        font-size: 30px;
-    }
-
-    nav ul{
-        background: #F5A627;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        height: 100vh;
-        padding-top: 60px;
-    }
-
-    nav ul li{
-        display: block;
-        margin: 30px;
-    }
-
-    nav ul .fa-solid{
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        cursor: pointer;
-    }
-
-    .header-text{
-        flex-basis: 100%;
-        margin-top: 160px;
-    }
-
-    .header-text p{
-        font-size: 16px;
-    }
-
-    .header-text h1{
-        font-size: 36px;
-    }
-
-    .header-text h3{
-        font-size: 20px;
-    }
-
-    .landing-section{
-        display: contents;
-        margin-top: 20px;
-    }
-
-    .photo-section{
-        flex-basis: 100%;
-        margin-top: 50px;
-        margin-bottom: 25px;
-    }
-
-    .subtitle{
-        font-size: 40px;
-        
-    }
-
-    .col-1, .col-2{
-        flex-basis: 100%;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    /* home */
-    .header{
-        height: 130vh;
-    }
-
     nav{
         padding: 15px;
     }
@@ -551,11 +474,13 @@ form button:hover{
 
     .photo-content{
         margin: 50px 50px 0;
-        border-radius: 12px;
     }
 
     .photo-content img{
         padding-bottom: 50px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
     .subtitle{
@@ -567,13 +492,11 @@ form button:hover{
     /* about */
     .about{
         padding: 50px;
-        position: relative;
     }
 
     .col-1, .col-2{
         flex-basis: 100%;
     }
-
 
     /* contact */
     .contact-left, .contact-right{
@@ -587,7 +510,7 @@ form button:hover{
 
     /* portfolio */
     .portfolio{
-        padding-top: 600px;
+        padding-top: 500px;
     }
 
     .showcase-list{
@@ -601,3 +524,4 @@ form button:hover{
     }
 
 }
+
