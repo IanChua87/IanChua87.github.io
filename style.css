@@ -112,14 +112,14 @@ nav ul li a:hover::after{
     text-align: center;
     color: #ff004f;
 
-    transition: transform 0.3s ease-in 0s;
+    transition: 0.3s ease-in 0s;
     
 }
 
 .resume-btn:hover{
     background-color: #ff004f;
     color: #f9f9f9;
-    transform: translateY(-10px);
+    transform: translateY(-12px);
 }
 
 .photo-content{
