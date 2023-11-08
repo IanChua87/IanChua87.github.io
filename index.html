@@ -13,11 +13,11 @@
 <body>
 
     <!-- ---home -->
-    <header class="navbar" id="top">
+    <header class="header">
         <div class="container">
-            <nav>
-                <img class="logo" src="images/draft-logo.png" alt="logo">
-                <ul>
+            <nav id="navbar">
+                <img class="logo" src="images/logoPD.png" alt="logo">
+                <ul class="menu">
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -36,7 +36,7 @@
                         resume</a>
                 </div>
                 <div class="photo-content">
-                    <img src="images/me-photo.jpg" alt="personal photo">
+                    <img src="images/me-photo.jpg" alt="personal photo">            
                 </div>
             </div>
         </div>
@@ -44,7 +44,6 @@
 
     <!-- ---about -->
     <div class="about" id="about">
-        <div class="container">
             <div class="row">
                 <div class="col-1">
                     <img src="images/aboutme.jpg" alt="about">
@@ -79,12 +78,10 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 
     <!-- ---portfolio -->
     <div class="portfolio" id="portfolio">
-        <div class="container">
             <h1 class="subtitle">Portfolio</h1>
             <div class="showcase-list">
                 <div class="work">
@@ -109,12 +106,10 @@
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-        </div>
     </div>
 
     <!-- ---contact me -->
     <div class="contact" id="contact">
-        <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="subtitle">Contact Me</h1>
@@ -135,7 +130,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+            <p class="copyright">copyright @ 2023</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -155,12 +150,19 @@
 
     <script>
         $(document).ready(function () {
-
-            $('.menu-btn').click(function () {
-                $('ul').toggleClass('active');
+            // Smooth scrolling for anchor links
+            $('#navbar a').on('click', function (e) {
+                if (this.hash !== '') {
+                    e.preventDefault();
+                    const hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
             });
         });
     </script>
+
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -169,7 +171,7 @@
             strings: ["front-end developer", "coder"],
             typeSpeed: 120,
             backSpeed: 120,
-            loop: true,
+            loop: true
         });
     </script>
 
