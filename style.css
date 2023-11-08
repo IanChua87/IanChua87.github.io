@@ -111,12 +111,15 @@ nav ul li a:hover::after{
     text-decoration: none;
     text-align: center;
     color: #ff004f;
+
+    transition: transform 0.3s ease-in 0s;
     
 }
 
 .resume-btn:hover{
     background-color: #ff004f;
     color: #f9f9f9;
+    transform: translateY(-10px);
 }
 
 .photo-content{
@@ -347,7 +350,7 @@ form button{
 .work{
     border-radius: 10px;
     position: relative;
-    overflow: hidden;
+    transition: 0.3s ease-in-out 0s;
 }
 
 .work img{
@@ -355,6 +358,11 @@ form button{
     border-top: 12px;
     display: block;
     aspect-ratio: 16/9;
+}
+
+.work:hover{
+    border: 4px solid #ff004f;
+    transform: translateY(-25px)
 }
 
 @media only screen and (max-width: 600px){
