@@ -13,11 +13,12 @@ body{
 /* header */
 .header{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: url(images/backgroundimg.jpg);
     background-size: cover;
     background-position: center;
     filter: brightness(80%);
+    overflow: hidden;
 }
 
 .logo{
@@ -27,11 +28,11 @@ body{
 }
 
 nav{
-    width: 100%;
     background-color: #2A3439;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex: wrap;
 }
 
 nav .fa-solid{
@@ -71,19 +72,13 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-
-/* hero-section */
-.landing-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 60px;
-    padding: 10px 12%;
+.container{
+    padding: 60px 12%;;
 }
 
+/* hero-section */
 .header-text{
-    flex-basis: 55%;
-    margin-top: 100px;
+    padding: 12%;
     font-size: 30px;
 }
 
@@ -126,25 +121,11 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-.photo-content{
-    flex-basis: 45%;
-    margin-top: 100px;
-}
-
-.photo-content img{
-    object-fit: cover;
-    width: 100%;
-    border-radius: 15px;
-    height: 620px;
-}
-
 
 /* about */
 .about{
-    position: relative;
     background: #2A3439;
-    padding: 60px 12%;
-    height: 100vh;
+    height: auto;
 }
 
 .row{
@@ -159,8 +140,9 @@ nav ul li a:hover::after{
 }
 
 .col-1 img{
-    width: 100%;
     border-radius: 15px;
+    height: auto;
+    width: 100%;
 }
 
 .col-2{
@@ -174,7 +156,7 @@ nav ul li a:hover::after{
 }
 
 .about-text{
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -234,7 +216,6 @@ contact */
 .contact{
     color: #f9f9f9;
     background-color: #2A3439;
-    padding: 70px 12% 0;
 }
 
 .contact-left{
@@ -331,7 +312,6 @@ form button:hover{
     color: #f9f9f9;
     /* background-color: #AFBFBB; */
     background-color: #2A3439;
-    padding: 200px 12% 50px;
 }
 
 .portfolio h1{
@@ -344,13 +324,15 @@ form button:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .showcase-list .work{
     background-color: #262626;
-    padding: 0 0 20px;
     border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .work h2{
@@ -396,7 +378,7 @@ form button:hover{
 
 /* copyright */
 .copyright{
-    padding: 50px;
+    padding: 30px;
     background-color: #F5A627;
 }
 
@@ -473,12 +455,11 @@ form button:hover{
     }
 
     .photo-content{
-        margin: 50px 50px 0;
+       margin: 50px;
     }
 
     .photo-content img{
         padding-bottom: 50px;
-        height: 350px;
         object-fit: cover;
         border-radius: 12px;
     }
@@ -491,7 +472,7 @@ form button:hover{
 
     /* about */
     .about{
-        padding: 50px;
+
     }
 
     .col-1, .col-2{
@@ -510,11 +491,13 @@ form button:hover{
 
     /* portfolio */
     .portfolio{
-        padding-top: 500px;
+        padding-top: 1000px;
     }
-
+    .container .subtitle{
+        font-size: 48px;
+    }
     .showcase-list{
-        grid-gap: 50;
+        grid-gap: 50px;
     }
 
     .work:hover{
@@ -524,4 +507,3 @@ form button:hover{
     }
 
 }
-
