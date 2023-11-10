@@ -33,6 +33,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex: wrap;
+    position: sticky;
+    top: 0;
 }
 
 nav .fa-solid{
@@ -118,11 +120,96 @@ nav ul li a:hover::after{
 .resume-btn:hover{
     background-color: #F5A627;
     color: #f9f9f9;
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 }
 
+@keyframes movingRectSquare{
+    0%{
+        transform: translate(0%) rotate(0deg);
+    }
+
+    100%{
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+@keyframes movingCircle{
+    0%{
+        transform: translate(0%) rotate(0deg);
+    }
+
+    100%{
+        transform: translateY(100vh);
+    }
+}
+
+.rectangle{
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    top: 10%;
+    left: 80%;
+    background: hsla(197, 100%, 63%, 1);
+
+background: linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#F173FF", GradientType=1 );
+    border-radius: 10px;
+    animation: movingRectSquare 8s linear infinite;
+}
+
+.circle{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: hsla(197, 100%, 63%, 1);
+
+    background: linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    
+    background: -moz-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    
+    background: -webkit-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#F173FF", GradientType=1 );
+    top: 40%;
+    left: 65%;
+    animation: movingCircle 8s linear infinite;
+}
+
+.square{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background: hsla(197, 100%, 63%, 1);
+
+background: linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#F173FF", GradientType=1 );
+    top: 24%;
+    left: 50%;
+    animation: movingRectSquare 8s linear infinite;
+}
 
 /* about */
+@keyframes slide{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-60px);
+    }
+}
+
 .about{
     background: #2A3439;
     height: auto;
@@ -137,12 +224,16 @@ nav ul li a:hover::after{
 
 .col-1{
     flex-basis: 40%;
+    margin-top: 30px;
+    animation: slide 1.3s infinite alternate;
 }
 
 .col-1 img{
     border-radius: 15px;
     height: auto;
     width: 100%;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 10px rgba(33, 33, 33, 0.7);;
 }
 
 .col-2{
@@ -440,12 +531,12 @@ form button:hover{
     }
 
     .header-text h1{
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 550;
     }
 
     .header-text h3{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .landing-section{
