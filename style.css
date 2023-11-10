@@ -409,6 +409,37 @@ form button:hover{
     background-color: #202124;
 }
 
+.tabs{
+    display: flex;
+    margin: 25px auto 0;
+    padding: 15px 5px 15px;
+    background-color: #262626;
+    width: fit-content;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 16px rgb(26, 24, 24);
+}
+
+.tab{
+    padding: 10px 15px;
+    border: 1px solid #F5A627;
+    background-color: transparent;
+    margin: 0 8px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: transform 0.5s;
+}
+
+.tab h3{
+    font-size: 16px;
+}
+
+.tab:hover{
+    background-color: #F5A627;
+    border: transparent;
+}
+
 .portfolio h1{
     font-size: 60px;
     text-align: center;

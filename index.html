@@ -85,6 +85,17 @@
     <div class="portfolio" id="portfolio">
         <div class="container">
             <h1 class="subtitle">Portfolio</h1>
+            <div class="tabs">
+                <div class="tab" data-tab="tab">
+                    <h3>Design</h3>
+                </div>
+                <div class="tab" data-tab="tab">
+                    <h3>Coding</h3>
+                </div>
+                <div class="tab" data-tab="tab">
+                    <h3>Others</h3>
+                </div>
+            </div>
             <div class="showcase-list">
                 <div class="work">
                     <img src="images/moviesGA.png" alt="movies GA">
@@ -199,6 +210,12 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            showtab()
+        })
     </script>
 
 
