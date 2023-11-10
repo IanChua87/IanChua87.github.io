@@ -433,8 +433,6 @@ form button:hover{
 
     .header-text{
         flex-basis: 100%;
-        margin-top: 160px;
-        margin-left: 50px;
     }
 
     .header-text p{
@@ -443,10 +441,11 @@ form button:hover{
 
     .header-text h1{
         font-size: 32px;
+        font-weight: 550;
     }
 
     .header-text h3{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .landing-section{
@@ -471,10 +470,6 @@ form button:hover{
 
 
     /* about */
-    .about{
-
-    }
-
     .col-1, .col-2{
         flex-basis: 100%;
     }
@@ -490,9 +485,6 @@ form button:hover{
 
 
     /* portfolio */
-    .portfolio{
-        padding-top: 1000px;
-    }
     .container .subtitle{
         font-size: 48px;
     }
