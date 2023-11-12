@@ -435,7 +435,7 @@ form button:hover{
     font-size: 16px;
 }
 
-.tab:hover{
+.tabs .active-link{
     background-color: #F5A627;
     border: transparent;
 }
@@ -448,7 +448,8 @@ form button:hover{
 
 .showcase-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-gap: 30px;
     margin-top: 50px;
 }
@@ -495,7 +496,8 @@ form button:hover{
     width: 100%;
     border-top: 12px;
     display: block;
-    aspect-ratio: 16/9;
+    min-height: auto;
+    height: 350px;
 }
 
 .work:hover{
@@ -696,6 +698,10 @@ form button:hover{
         border: 4px solid #F5A627;
         transition: 0.3s;
         transform: scale(0.8);
+    }
+
+    .tabs{
+        width: fit-content;
     }
 
 }
