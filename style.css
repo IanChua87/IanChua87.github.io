@@ -402,6 +402,7 @@ form button:hover{
     color: #f9f9f9;
     /* background-color: #AFBFBB; */
     background-color: #202124;
+    padding: 0 8%;
 }
 
 .tabs{
@@ -457,6 +458,7 @@ form button:hover{
     padding-bottom: 20px;
     box-sizing: border-box;
     box-shadow: 10px 10px 16px rgb(26, 24, 24);
+    border: 4px solid transparent;
 }
 
 .work h2{
@@ -680,19 +682,32 @@ form button:hover{
         padding: 40px 0;
     }
 
+    form button{
+        width: 100%;
+    }
+
+    form button:hover{
+        background-color: #F5A627;
+        color: #fff;
+        transform : translateY(0);
+        border: 2px solid transparent;
+    }
+
 
     /* portfolio */
+    .portfolio{
+        padding: 0%;
+    }
     .container .subtitle{
         font-size: 48px;
     }
     .showcase-list{
-        grid-gap: 50px;
+        grid-gap: 40px;
     }
 
     .work:hover{
-        border: 4px solid #F5A627;
-        transition: 0.3s;
-        transform: scale(0.8);
+        border: 4px solid transparent;
+        transform: scale(1);
     }
 
     .tabs{
