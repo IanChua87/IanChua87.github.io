@@ -27,7 +27,6 @@ body{
 }
 
 
-
 /* .modal-container.active .work{
     display: none;
 } */
@@ -85,9 +84,12 @@ body{
     
 }
 
+.logo-link{
+    margin-left: 12%;
+}
+
 .logo{
     width: 200px;
-    margin-left: 12%;
     cursor: pointer;
 }
 

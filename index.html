@@ -20,7 +20,7 @@
         <header class="header">
             <div class="navbar-container">
                 <nav id="navbar">
-                    <a href="#"><img class="logo" src="images/logoPD.png" alt="logo"></a>
+                    <a href="index.html" class="logo-link"><img class="logo" src="images/logoPD.png" alt="logo"></a>
                     <ul class="menu" id="menu">
                         <li class="current"><a href="#">Home</a></li>
                         <li><a href="#about">About Me</a></li>
@@ -201,18 +201,9 @@
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-
-                <!-- modal -->
-                <div class="modal-container" id="modal">
-                    <span class="overlay"></span>
-
-                    <div class="modal-box" id="modal-box">
-                        <img id="popupImage" src="">
-                        <button class="exit-modal">Close</button>
-                    </div>
-                </div>
             </div>
         </div>
+        
 
 
         <!-- ---contact me -->
@@ -253,6 +244,16 @@
         </div>
     </div>
 
+    <!-- modal -->
+    <div class="modal-container" id="modal">
+        <span class="overlay"></span>
+
+        <div class="modal-box" id="modal-box">
+            <img id="popupImage" src="">
+            <button class="exit-modal">Close</button>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
@@ -261,10 +262,18 @@
                 var imagePath = $(this).find("img").attr("src");
                 $("#popupImage").attr("src", imagePath);
                 $("#modal").fadeIn(700);
+                $(".bg-container").css({
+                    "filter": "blur(8px)",
+                });
+                $("body").css("overflow", "hidden");
             });
 
             $(".exit-modal").click(function () {
                 $("#modal").fadeOut(700);
+                $(".bg-container").css({
+                    "filter": "blur(0)",
+                });
+                $("body").css("overflow", "scroll");
             });
         });
     </script>
