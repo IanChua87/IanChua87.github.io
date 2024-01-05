@@ -75,11 +75,9 @@ body{
 
 /* header */
 .header{
-    width: 100%;
     height: 100vh;
     background-color: #121010;
     filter: brightness(80%);
-    z-index: 999;
     overflow: hidden;
     
 }
@@ -99,7 +97,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex: wrap;
-    z-index: 999;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
 
 }
 
@@ -278,7 +278,7 @@ nav ul li a:hover::after{
 
 .about{
     background: #202124;
-    height: auto;
+    height: 100vh;
 }
 
 .row{
@@ -659,6 +659,7 @@ form button:hover{
 
     .header-text p{
         font-size: 14px;
+        margin-top: 50px;
     }
 
     .header-text h1{
@@ -775,7 +776,9 @@ form button:hover{
 
     /* portfolio */
     .portfolio{
-        padding: 0%;
+        padding-top: 520px;
+        padding-left: 0;
+        padding-right: 0%;
     }
     .container .subtitle{
         font-size: 48px;
