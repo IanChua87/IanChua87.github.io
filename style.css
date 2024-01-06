@@ -79,7 +79,7 @@ body{
     background-color: #121010;
     filter: brightness(80%);
     overflow: hidden;
-    width: 100%;
+    
 }
 
 .logo-link{
@@ -278,7 +278,6 @@ nav ul li a:hover::after{
 
 .about{
     background: #202124;
-    height: 100vh;
 }
 
 .row{
@@ -467,9 +466,7 @@ form button:hover{
 /* portfolio */
 .portfolio{
     color: #f9f9f9;
-    /* background-color: #AFBFBB; */
     background-color: #202124;
-    padding: 0 8%;
 }
 
 .tabs{
@@ -490,7 +487,6 @@ form button:hover{
     margin: 0 8px;
     border-radius: 5px;
     cursor: pointer;
-
     transition: transform 0.5s;
 }
 
@@ -509,10 +505,13 @@ form button:hover{
     /* color: #262626; */
 }
 
+.tabs{
+    flex-basis: 100%;
+}
+
 .showcase-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     grid-gap: 30px;
     margin-top: 50px;
 }
@@ -563,6 +562,7 @@ form button:hover{
     display: block;
     min-height: auto;
     height: 350px;
+    max-width: 100%;
 }
 
 .work:hover{
@@ -605,7 +605,6 @@ form button:hover{
     /* home */
     .header{
         height: 100vh;
-        width: 100%;
     }
     nav{
         padding: 15px;
@@ -659,12 +658,12 @@ form button:hover{
     }
 
     .header-text p{
-        font-size: 11px;
+        font-size: 14px;
         margin-top: 50px;
     }
 
     .header-text h1{
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 550;
     }
 
@@ -777,15 +776,36 @@ form button:hover{
 
     /* portfolio */
     .portfolio{
-        padding-top: 520px;
-        padding-left: 0;
-        padding-right: 0%;
+        padding: 0;
     }
     .container .subtitle{
         font-size: 48px;
     }
     .showcase-list{
         grid-gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .tabs{
+        display: flex;
+        margin: 25px auto 0;
+        padding: 12px 6px 12px;
+        background-color: #262626;
+        width: fit-content;
+        border-radius: 8px;
+        box-sizing: border-box;
+        box-shadow: 10px 10px 16px rgb(26, 24, 24);
+        margin: auto;
+    }
+    
+    .tab{
+        padding: 8px 10px;
+        border: 1px solid #F5A627;
+        background-color: transparent;
+        margin: 0 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.5s;
     }
 
     .work:hover{
