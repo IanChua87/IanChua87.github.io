@@ -280,6 +280,10 @@ nav ul li a:hover::after{
     background: #202124;
 }
 
+.about-container{
+    padding: 80px 12%;
+}
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -348,7 +352,8 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 15px 0;
-    font-weight: 500;
+    font-weight: 400;
+
 }
 
 .tab-contents ul li span{
@@ -365,108 +370,15 @@ nav ul li a:hover::after{
     display: block;
 }
 
-
-
-/* 
-contact */
-.contact{
-    color: #f9f9f9;
-    background-color: #202124;
-}
-
-.contact-left{
-    flex-basis: 50%;
-}
-
-.contact-right{
-    flex-basis: 50%;
-}
-
-.contact-left h1{
-    color: #f9f9f9;
-}
-
-.contact-left p{
-    margin-top: 30px;
-}
-
-.contact-left p i{
-    color: #F5A627;
-    margin-right: 15px;
-    font-size: 24px;
-}
-
-.social{
-    margin-top: 30px;
-}
-
-.social a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-
-    transition: 0.2s ease-in 0s;
-}
-
-.social a:hover{
-    color: #F5A627;
-    transform: translateY(-7px);
-}
-
-.contact-right form{
-    width: 100%;
-}
-
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 20px 0 10px;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 6px;
-}
-
-form button{
-    font-size: 16px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 15px 45px;
-    border: none;
-    border-radius: 6px;
-    background-color: #F5A627;
-    cursor: pointer;
-    color: #fff;
-    font-weight: 600;
-
-    transition: 0.3s ease-in 0s;
-}
-
-form button:hover{
-    border: 2px solid #F5A627;
-    color: #F5A627;
-    background-color: transparent;
-    transform: translateY(-25px);
-}
-
-.copyright{
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 20px;
-    font-size: 14px;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-}
-
 /* portfolio */
 .portfolio{
     color: #f9f9f9;
     background-color: #202124;
+}
+
+.portfolio-container{
+    padding: 80px 16%;
+
 }
 
 .tabs{
@@ -499,7 +411,7 @@ form button:hover{
     border: transparent;
 }
 
-.portfolio h1{
+.portfolio .subtitle{
     font-size: 60px;
     text-align: center;
     /* color: #262626; */
@@ -571,6 +483,108 @@ form button:hover{
     transform: translateY(-25px)
 }
 
+
+/* 
+contact */
+.contact{
+    color: #f9f9f9;
+    background-color: #202124;
+}
+
+.contact-container{
+    padding: 80px 12%;
+}
+
+.contact-left{
+    flex-basis: 50%;
+}
+
+.contact-right{
+    flex-basis: 50%;
+}
+
+.contact-left h1{
+    color: #f9f9f9;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #F5A627;
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.social{
+    margin-top: 30px;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+
+    transition: 0.2s ease-in 0s;
+}
+
+.social a:hover{
+    color: #F5A627;
+    transform: translateY(-7px);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 20px 0 10px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+form button{
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px 45px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-color: #F5A627;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+
+    transition: 0.3s ease-in 0s;
+}
+
+form button:hover{
+    border: 2px solid #F5A627;
+    color: #F5A627;
+    background-color: transparent;
+    transform: translateY(-25px);
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+}
+
+
 /* copyright footer */
 .copyright{
     padding: 40px 30px 30px;
@@ -628,7 +642,7 @@ form button:hover{
         top: 0;
         right: -250px;
         width: 250px;
-        height: 100%;
+        height: 100vh;
         padding: 50px 0 0 0;
         margin: 0;
         z-index: 2;
@@ -743,19 +757,46 @@ form button:hover{
         border-radius: 12px;
     }
 
-    .subtitle{
-        font-size: 40px;
-    }
-
 
     /* about */
     .col-1, .col-2{
         flex-basis: 100%;
     }
 
+    .about .subtitle{
+        font-size: 40px;
+    }
+
+    .about-text{
+        font-size: 16px;
+    }
+
+    .tab-contents ul li span{
+        color: #F5A627;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .tab-contents ul li{
+        list-style: none;
+        margin: 15px 0;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
     /* contact */
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+
+    .contact .subtitle{
+        font-size: 40px;
+    }
+
+    .social a{
+        margin-top: 40px;
+        font-size: 24px;
     }
 
     .contact-right{
@@ -778,34 +819,53 @@ form button:hover{
     .portfolio{
         padding: 0;
     }
-    .container .subtitle{
-        font-size: 48px;
+
+    .portfolio-container{
+        padding: 0 12%;
+    }
+
+    .portfolio .subtitle{
+        font-size: 40px;
     }
     .showcase-list{
-        grid-gap: 40px;
+        grid-gap: 30px;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .tabs{
         display: flex;
         margin: 25px auto 0;
-        padding: 12px 6px 12px;
+        padding: 10px 5px 10px;
         background-color: #262626;
-        width: fit-content;
         border-radius: 8px;
         box-sizing: border-box;
         box-shadow: 10px 10px 16px rgb(26, 24, 24);
-        margin: auto;
     }
     
     .tab{
-        padding: 8px 10px;
+        padding: 6px 8px;
         border: 1px solid #F5A627;
         background-color: transparent;
-        margin: 0 8px;
+        margin: 0 5px;
         border-radius: 5px;
         cursor: pointer;
         transition: transform 0.5s;
+    }
+    .work h2{
+        font-size: 24px;
+    }
+    
+    .work p{
+        font-size: 14px;
+    }
+    
+    .work a i{
+        text-decoration: none;
+        color: #F5A627;
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 20px;
+        padding: 0 20px;
     }
 
     .work:hover{
@@ -815,6 +875,15 @@ form button:hover{
 
     .tabs{
         width: fit-content;
+    }
+
+    /* copyright */
+    .copyright .fa-brands{
+        font-size: 24px;
+    }
+
+    .copyright p{
+        font-size: 13px;
     }
 
 }
