@@ -16,16 +16,23 @@
     <div class="bg-container">
 
         <nav id="navbar">
-            <a href="index.html" class="logo-link"><img class="logo" src="images/logoPD.png" alt="logo"></a>
-            <ul class="menu" id="menu">
-                <li class="current"><a href="#">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <div class="nav-wrap">
+                <a href="index.html" class="logo-link"><img class="logo" src="images/logoPD.png" alt="logo"></a>
+                
+                <div class="menu-wrap">
+                    <ul class="menu" id="menu">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
         </nav>
         <!-- ---home -->
         <header class="header">
@@ -49,10 +56,10 @@
         <div class="about" id="about">
             <div class="about-container">
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-1 left-col">
                         <img src="images/me-photo.jpg" alt="about">
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 right-col">
                         <h1 class="subtitle">About Me</h1>
                         <p class="about-text">I'm a student studying in Republic Polytechnic, taking Diploma in Digital
                             Design and Development Course(DDDD). Being passionate in IT has led me to take up this
@@ -202,7 +209,6 @@
                 </div>
             </div>
         </div>
-        
 
 
         <!-- ---contact me -->
@@ -256,24 +262,27 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
+        $(document).ready(function(){
+            $(".hamburger").click(function(){
+                $(".menu-wrap").toggleClass("nav-expand");
+                $(".hamburger").toggleClass("hamburger-animate");
+            });
+        });
+    </script>
+
+    <script>
         $(document).ready(function () {
             $(".work").click(function () {
                 var imagePath = $(this).find("img").attr("src");
                 $("#popupImage").attr("src", imagePath);
                 $("#modal").fadeIn(700);
-                $(".bg-container").css({
-                    "filter": "blur(8px)",
-                    "pointer-events": "none"
-                });
+                $(".bg-container").addClass("blurred-bg");
                 $("body").css("overflow", "hidden");
             });
 
             $(".exit-modal").click(function () {
                 $("#modal").fadeOut(700);
-                $(".bg-container").css({
-                    "filter": "blur(0)",
-                    "pointer-events": "auto"
-                });
+                $(".bg-container").removeClass("blurred-bg");
                 $("body").css("overflow", "scroll");
             });
         });
@@ -335,18 +344,9 @@
     </script>
 
     <script>
-        var hamMenu = document.getElementById("menu");
-        var body = document.getElementsByTagName("body");
-
-        function openmenu() {
-            hamMenu.style.right = "0";
-            bgContainer.style.height = "100vh";
-
-        }
-        function closemenu() {
-            hamMenu.style.right = "-250px";
-            bgContainer.style.height = "";
-        }
+        $(document).ready(function(){
+            $(".menu").toggleClass("show")
+        })
     </script>
 
     <script>
@@ -354,12 +354,18 @@
             var navbar = $("#navbar");
 
             $(document).scroll(function(){
-                if($(this).scrollTop() > 0){
+                if($(this).scrollTop() > 80){
                     navbar.css("background-color" , "rgba(32, 33, 36, 0.4)")
+                }
+
+                else{
+                    navbar.css("background-color" , "rgba(32, 33, 36, 1)")
                 }
             });
         });
     </script>
+
+
 
 
 
