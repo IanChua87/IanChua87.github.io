@@ -266,6 +266,14 @@
             $(".hamburger").click(function(){
                 $(".menu-wrap").toggleClass("nav-expand");
                 $(".hamburger").toggleClass("hamburger-animate");
+
+                if($(".menu-wrap").hasClass("nav-expand")){
+                    $("body").css("overflow", "hidden");
+                    $("#navbar").css("background-color" , "rgba(32, 33, 36, 1)")
+                } else{
+                    $("body").css("overflow", "scroll");
+                    $("#navbar").css("background-color" , "rgba(32, 33, 36, 0.4)")
+                }
             });
         });
     </script>
