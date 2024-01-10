@@ -466,7 +466,7 @@ nav ul li a:hover::after{
 
 .showcase-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     row-gap: 40px;
     column-gap: 30px;
     margin-top: 50px;
@@ -480,7 +480,7 @@ nav ul li a:hover::after{
     padding-bottom: 20px;
     box-sizing: border-box;
     box-shadow: 10px 10px 16px rgb(26, 24, 24);
-    border: 4px solid transparent;
+    border: 3px solid transparent;
     cursor: pointer;
 }
 
@@ -488,13 +488,13 @@ nav ul li a:hover::after{
     font-size: 28px;
     font-weight: 500;
     margin-top: 25px;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .work p{
     font-size: 16px;
     margin: 10px 0 0;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .work a i{
@@ -503,26 +503,26 @@ nav ul li a:hover::after{
     font-size: 20px;
     display: inline-block;
     margin-top: 20px;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .work{
     border-radius: 10px;
     position: relative;
     transition: 0.3s ease-in-out 0s;
+    object-fit: cover;
 }
 
 .work img{
     width: 100%;
     border-top: 12px;
-    display: block;
-    min-height: auto;
-    height: 350px;
-    max-width: 100%;
+    padding: 30px 30px 0;
+    max-height: 280px;
+    object-fit: contain;
 }
 
 .work:hover{
-    border: 4px solid #F5A627;
+    border: 3px solid #F5A627;
     transition: 0.3s ease-in-out 0s;
     transform: translateY(-25px)
 }
@@ -599,8 +599,8 @@ form input, form textarea{
 
 form button{
     font-size: 16px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 15px 45px;
     border: 2px solid transparent;
     border-radius: 6px;
@@ -616,7 +616,14 @@ form button:hover{
     border: 2px solid #F5A627;
     color: #F5A627;
     background-color: transparent;
-    transform: translateY(-25px);
+    transform: translateY(-10px);
+}
+
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+    font-size: 13px;
 }
 
 
