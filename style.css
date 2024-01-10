@@ -22,13 +22,13 @@ body{
     background-color: #2b2c2f;
     max-width: 800px;
     width: 800px;
-    max-height: 1600px;
+    height: auto;
     left: 50%;  
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     padding: 40px;
-    border-radius: 8px;
+    border-radius: 12px;
     align-items: center;
     display: none;
 }
@@ -43,16 +43,16 @@ body{
 }
 
 .exit-modal{
-    padding: 15px 80px;
+    padding: 8px 20px;
     background-color: #F5A627;
     border-radius: 8px;
     border: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    margin-top: 55px;
-    width: 100%;
     cursor: pointer;
+    margin: 30px 5px 0 5px;
+    width: 100%;
 }
 
 .exit-modal:hover{
@@ -67,7 +67,6 @@ body{
     max-width: 100%;
     max-height: 500px;
     height: auto;
-    object-fit: contain;
 }
 
 
@@ -482,6 +481,7 @@ nav ul li a:hover::after{
     box-shadow: 10px 10px 16px rgb(26, 24, 24);
     border: 3px solid transparent;
     cursor: pointer;
+    height: 600px;
 }
 
 .work h2{
@@ -518,7 +518,7 @@ nav ul li a:hover::after{
     border-top: 12px;
     padding: 30px 30px 0;
     max-height: 280px;
-    object-fit: contain;
+    object-fit: scale-down;
 }
 
 .work:hover{
@@ -697,17 +697,16 @@ form button:hover{
     font-size: 24px;
     font-weight: 400;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    margin-top: 55px;
-    width: 100%;
     cursor: pointer;
 }
 
-.exit-modal:hover{
+.exit-modal:hover, .view-modal:hover{
     opacity: 0.7;
 }
 
 .modal-box{
     text-align: center;
+    display: flex;
 }
 
 #popupImage{
