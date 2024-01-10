@@ -15,6 +15,7 @@ body{
 
 
 
+
 /* ----------modal---------- */
 .modal-container{
     position: fixed;
@@ -171,6 +172,7 @@ nav ul li a:hover::after{
     background-color: #121010;
     filter: brightness(80%);
     overflow: hidden;
+    z-index: 9998;
 }
 
 .header-text{
@@ -257,7 +259,7 @@ nav ul li a:hover::after{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#F173FF", GradientType=1 );
     border-radius: 10px;
     animation: movingRectSquare 6s linear infinite;
-    z-index: -1;
+    z-index: 9999;
 }
 
 .circle{
@@ -297,7 +299,7 @@ nav ul li a:hover::after{
     top: 24%;
     left: 50%;
     animation: movingRectSquare 6s linear infinite;
-    z-index: -1;
+    z-index: 9999;
 }
 
 
@@ -756,11 +758,12 @@ form button:hover{
 
     .header-text h1{
         font-size: 26px;
-        font-weight: 550;
+        font-weight: 400;
     }
 
     .header-text h3{
         font-size: 16px;
+        font-weight: 300;
     }
 
     .landing-section{
