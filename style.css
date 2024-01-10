@@ -472,7 +472,6 @@ nav ul li a:hover::after{
     box-shadow: 10px 10px 16px rgb(26, 24, 24);
     border: 3px solid transparent;
     cursor: pointer;
-    height: 600px;
 }
 
 .work h2{
