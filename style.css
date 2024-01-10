@@ -246,19 +246,19 @@ nav ul li a:hover::after{
 
 .rectangle{
     position: absolute;
-    width: 240px;
+    width: 180px;
     height: 110px;
     top: 10%;
     left: 80%;
-    background: hsla(197, 100%, 63%, 1);
+    background: hsla(37, 91%, 56%, 1);
 
-    background: linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    background: linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
 
-    background: -moz-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
 
-    background: -webkit-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
 
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#F173FF", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5A627", endColorstr="#FFF95B", GradientType=1 );
     border-radius: 10px;
     animation: movingRectSquare 6s linear infinite;
     z-index: 9999;
@@ -269,15 +269,15 @@ nav ul li a:hover::after{
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    background: hsla(197, 100%, 63%, 1);
+    background: hsla(37, 91%, 56%, 1);
 
-    background: linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
-    
-    background: -moz-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
-    
-    background: -webkit-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#F173FF", GradientType=1 );
+    background: linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
+
+    background: -moz-linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
+
+    background: -webkit-linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5A627", endColorstr="#FFF95B", GradientType=1 );
     top: 10%;
     left: 65%;
     animation: movingCircle 6s linear infinite;
@@ -289,15 +289,15 @@ nav ul li a:hover::after{
     height: 110px;
     width: 110px;
     border-radius: 10px;
-    background: hsla(197, 100%, 63%, 1);
+    background: hsla(37, 91%, 56%, 1);
 
-    background: linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    background: linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
 
-    background: -moz-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
 
-    background: -webkit-linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 73%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
 
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#F173FF", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5A627", endColorstr="#FFF95B", GradientType=1 );
     top: 24%;
     left: 50%;
     animation: movingRectSquare 6s linear infinite;
