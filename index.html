@@ -288,6 +288,7 @@
         <div class="modal-box" id="modal-box">
             <img id="popupImage" src="">
             <button class="exit-modal">Close</button>
+            <a href="#" id="view-link">View</a>
         </div>
     </div>
 
@@ -354,9 +355,9 @@
         $(document).ready(function () {
             $(".work").click(function () {
                 var imagePath = $(this).find("img").attr("src");
-                var viewUrl = $(this).find(".view-modal").data("url");
+                var workLink = $(this).data("link");
                 $("#popupImage").attr("src", imagePath);
-                $(".view-modal").attr("href", viewUrl);
+                $("#view-link").attr("href", workLink);
                 $("#modal").fadeIn(700);
                 $(".bg-container").addClass("blurred-bg");
                 $("body").css("overflow", "hidden");
