@@ -249,7 +249,15 @@ nav ul li a:hover::after{
     height: 110px;
     top: 10%;
     left: 80%;
-    
+    background: hsla(37, 91%, 56%, 1);
+
+    background: linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
+
+    background: -moz-linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
+
+    background: -webkit-linear-gradient(135deg, hsla(37, 91%, 56%, 1) 17%, hsla(58, 100%, 68%, 1) 92%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5A627", endColorstr="#FFF95B", GradientType=1 );
     
     border-radius: 10px;
     animation: movingRectSquare 6s linear infinite;
