@@ -465,7 +465,6 @@ nav ul li a:hover::after{
 .showcase-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: 1fr;
     row-gap: 40px;
     column-gap: 30px;
     margin-top: 50px;
@@ -518,6 +517,13 @@ nav ul li a:hover::after{
     padding: 30px 30px 0;
     max-height: 280px;
     object-fit: scale-down;
+}
+
+.work video{
+    width: 100%;
+    border-top: 12px;
+    padding: 30px 30px 0;
+    max-height: 280px;
 }
 
 .work:hover{
@@ -600,7 +606,7 @@ form button{
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 15px 45px;
+    padding: 10px 35px;
     border: 2px solid transparent;
     border-radius: 6px;
     background-color: #F5A627;

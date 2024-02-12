@@ -109,6 +109,9 @@
                     <div class="tab" data-tab="coding">
                         <h3>Coding</h3>
                     </div>
+                    <div class="tab" data-tab="vr">
+                        <h3>VR</h3>
+                    </div>
                 </div>
                 <div class="showcase-list" id="all">
                     <div class="work">
@@ -191,7 +194,20 @@
                         <p>A ward management system that consist basic features such as adding, removing, editing and checking patient and visistor records</p>
                         <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
+                    <div class="work">
+                        <video id="myVideo" src="videos/GA-final-3scaperoom.mp4" controls onclick="playPause()"></video>
+                        <h2>Server Escape Room VR</h2>
+                        <p>An escape room made using Unity where player is trapped in a server room, consisting of 4 rooms and each of them must make use of tools and objects found to unlock each room until the final exit is found to successfully escape.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    <div class="work">
+                        <video id="myVideo" src="videos/boomer.mp4" controls onclick="playPause()"></video>
+                        <h2>Boomer Script VR</h2>
+                        <p>A VR experience that uses Unity to create custom teleportation area for players to teleport at specific area of the map by hovering around them. It also invovles animating the boomer object to play the exploding animation upon getting hit by the sword and lastly making a more immersive experience by increasing graphics quality.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
+
                 <div class="showcase-list" id="design">
                     <div class="work">
                         <img src="images/Home Page.jpg" alt="Web design UI/UX">
@@ -272,6 +288,21 @@
                         <img src="images/ward-man.png" alt="">
                         <h2>Ward management system</h2>
                         <p>A ward management system that consist basic features such as adding, removing, editing and checking patient and visistor records</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="showcase-list" id="vr">
+                    <div class="work">
+                        <video id="myVideo" src="videos/GA-final-3scaperoom.mp4" controls onclick="playPause()"></video>
+                        <h2>Server Escape Room VR</h2>
+                        <p>An escape room made using Unity where player is trapped in a server room, consisting of 4 rooms and each of them must make use of tools and objects found to unlock each room until the final exit is found to successfully escape.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    <div class="work">
+                        <video id="myVideo" src="videos/boomer.mp4" controls onclick="playPause()"></video>
+                        <h2>Boomer Script VR</h2>
+                        <p>A VR experience that uses Unity to create custom teleportation area for players to teleport at specific area of the map by hovering around them. It also invovles animating the boomer object to play the exploding animation upon getting hit by the sword and lastly making a more immersive experience by increasing graphics quality.</p>
                         <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -367,6 +398,18 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+      <script>
+        var video = document.getElementById("myVideo");
+
+        function playPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    </script>
 
 
     <script>
