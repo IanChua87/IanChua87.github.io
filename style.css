@@ -317,6 +317,7 @@ nav ul li a:hover::after{
 
 .about{
     background: #202124;
+    width: 100%;
 }
 
 .about-container{
@@ -325,28 +326,27 @@ nav ul li a:hover::after{
 
 .row{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 15px;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1400px;
 }
 
 .left-col{
-    flex-basis: 40%;
     margin-top: 30px;
     animation: slide 1.3s infinite alternate;
 }
 
 .left-col img{
     border-radius: 15px;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 90%;
     box-sizing: border-box;
     box-shadow: 8px 8px 10px rgba(33, 33, 33, 0.7)
 }
 
-.col-2{
-    flex-basis: 50%;
+.right-col{
     margin-top: 30px;
+    width: 550px
 }
 
 .subtitle{
@@ -356,7 +356,7 @@ nav ul li a:hover::after{
 
 .about-text{
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -397,12 +397,13 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
     color: #F5A627;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 }
 
 .tab-contents{
     display: none;
+    font-size: 17px;
 }
 
 .tab-contents.active-tab{
@@ -842,8 +843,16 @@ form button:hover{
 
     
     /* ----------about---------- */
-    .col-1, .col-2{
-        flex-basis: 100%;
+    .about{
+        flex-direction: column;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .right-col{
+        width: auto;
     }
 
     .about .subtitle{
